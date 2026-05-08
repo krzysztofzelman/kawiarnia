@@ -13,13 +13,12 @@ import type { MenuItem, OfferItem, OpeningHour } from "@/lib/supabase/types";
 export const dynamic = "force-dynamic";
 
 export default async function Home() {
-  const supabase = createServerClient();
-
   let menuItems: MenuItem[] = [];
   let offers: OfferItem[] = [];
   let openingHours: OpeningHour[] = [];
 
   try {
+    const supabase = createServerClient();
     const [menuResult, offersResult, hoursResult] = await Promise.all([
       supabase.from("menu_items").select("*").order("sort_order"),
       supabase.from("offers").select("*").order("sort_order"),
