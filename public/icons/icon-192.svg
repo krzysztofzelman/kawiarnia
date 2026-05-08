@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" viewBox="0 0 192 192">
+  <rect width="192" height="192" rx="32" fill="#783f1d"/>
+  <!-- Filizanka -->
+  <g transform="translate(56, 48)">
+    <!-- Spodek -->
+    <ellipse cx="40" cy="80" rx="44" ry="8" fill="#fdf2e4" opacity="0.9"/>
+    <!-- Filiżanka -->
+    <path d="M12 20 C12 36 14 66 14 66 C14 74 24 80 40 80 C56 80 66 74 66 66 C66 66 68 36 68 20 Z" fill="#fdf2e4"/>
+    <!-- Ucho -->
+    <path d="M68 32 C80 32 82 44 82 52 C82 60 80 68 68 66" fill="none" stroke="#fdf2e4" stroke-width="5" stroke-linecap="round"/>
+    <!-- Kawa -->
+    <path d="M18 28 C18 36 20 58 20 58 C20 62 28 66 40 66 C52 66 60 62 60 58 C60 58 62 36 62 28 Z" fill="#5c2e16" opacity="0.8"/>
+    <!-- Para -->
+    <path d="M30 14 C28 8 32 4 30 0" fill="none" stroke="#fdf2e4" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+    <path d="M40 12 C38 6 42 2 40 -2" fill="none" stroke="#fdf2e4" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+    <path d="M50 14 C48 8 52 4 50 0" fill="none" stroke="#fdf2e4" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+  </g>
+</svg>
