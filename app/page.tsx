@@ -10,18 +10,28 @@ import PwaInstallPrompt from "@/components/PwaInstallPrompt";
 import OfflineNotice from "@/components/OfflineNotice";
 import type { MenuItem, OfferItem, OpeningHour } from "@/lib/supabase/types";
 
+export const dynamic = "force-dynamic";
+
 export default async function Home() {
   const supabase = createServerClient();
 
-  const [menuResult, offersResult, hoursResult] = await Promise.all([
-    supabase.from("menu_items").select("*").order("sort_order"),
-    supabase.from("offers").select("*").order("sort_order"),
-    supabase.from("opening_hours").select("*").order("sort_order"),
-  ]);
+  let menuItems: MenuItem[] = [];
+  let offers: OfferItem[] = [];
+  let openingHours: OpeningHour[] = [];
 
-  const menuItems: MenuItem[] = menuResult.data ?? [];
-  const offers: OfferItem[] = offersResult.data ?? [];
-  const openingHours: OpeningHour[] = hoursResult.data ?? [];
+  try {
+    const [menuResult, offersResult, hoursResult] = await Promise.all([
+      supabase.from("menu_items").select("*").order("sort_order"),
+      supabase.from("offers").select("*").order("sort_order"),
+      supabase.from("opening_hours").select("*").order("sort_order"),
+    ]);
+
+    menuItems = (menuResult.data ?? []) as MenuItem[];
+    offers = (offersResult.data ?? []) as OfferItem[];
+    openingHours = (hoursResult.data ?? []) as OpeningHour[];
+  } catch (err) {
+    console.error("Supabase fetch error, using fallback data:", err);
+  }
 
   return (
     <>
