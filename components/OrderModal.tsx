@@ -18,9 +18,9 @@ export default function OrderModal({ open, onClose }: OrderModalProps) {
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 p-4">
+    <div className="fixed inset-0 z-50 flex items-center justify-center overflow-y-auto bg-black/40 p-4">
       <div
-        className="max-w-md w-full rounded-2xl bg-white p-6 shadow-xl"
+        className="max-w-md w-full my-8 rounded-2xl bg-white p-6 shadow-xl"
         role="dialog"
         aria-modal="true"
         aria-label="Zamów online"
