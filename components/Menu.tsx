@@ -48,7 +48,7 @@ export default function Menu({ items }: MenuProps) {
                       {item.price}
                     </span>
                   </div>
-                  <p className="mt-0.5 text-sm leading-relaxed text-amber-900/60">
+                  <p className="mt-0.5 text-sm leading-relaxed text-foreground/60">
                     {item.description}
                   </p>
                 </div>

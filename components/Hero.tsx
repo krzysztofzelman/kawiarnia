@@ -10,7 +10,7 @@ export default function Hero() {
         <h1 className="animate-fade-in-up mb-4 text-4xl font-extrabold tracking-tight text-warm-brown sm:text-5xl lg:text-6xl">
           Kawa <span className="text-primary-light">&</span> Ciasteczko
         </h1>
-        <p className="animate-fade-in-up mx-auto mb-8 max-w-lg text-lg leading-relaxed text-amber-900/70 sm:text-xl [animation-delay:150ms]">
+        <p className="animate-fade-in-up mx-auto mb-8 max-w-lg text-lg leading-relaxed text-warm-brown/80 sm:text-xl [animation-delay:150ms]">
           Przytulna kawiarnia, w której każdy łyk i każdy kęs to mała chwila
           przyjemności. Domowe wypieki, najlepsza kawa i uśmiech na dobry
           początek dnia.

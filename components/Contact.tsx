@@ -49,7 +49,7 @@ export default function Contact({ hours }: ContactProps) {
                     {item.emoji}
                   </span>
                   <div>
-                    <p className="text-sm font-medium text-amber-900/50">
+                    <p className="text-sm font-medium text-foreground/55">
                       {item.label}
                     </p>
                     <p className="font-semibold text-warm-brown">
@@ -76,7 +76,7 @@ export default function Contact({ hours }: ContactProps) {
                     key={item.day}
                     className="flex items-center justify-between border-b border-amber-100 pb-2 last:border-0 last:pb-0"
                   >
-                    <span className="text-sm font-medium text-amber-900/70">
+                    <span className="text-sm font-medium text-foreground/75">
                       {item.day}
                     </span>
                     <span className="text-sm font-semibold text-warm-brown">

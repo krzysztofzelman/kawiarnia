@@ -28,7 +28,7 @@ export default function OrderModal({ open, onClose }: OrderModalProps) {
         {state?.success ? (
           <>
             <h3 className="text-lg font-bold text-emerald-700">✓ Gotowe!</h3>
-            <p className="mt-2 text-sm leading-relaxed text-amber-900/70">
+            <p className="mt-2 text-sm leading-relaxed text-warm-brown/80">
               Dziękujemy! Powiadomimy Cię mailowo, gdy zamówienia online
               wystartują.
             </p>
@@ -44,7 +44,7 @@ export default function OrderModal({ open, onClose }: OrderModalProps) {
             <h3 className="text-lg font-bold text-warm-brown">
               🛵 Zamów online
             </h3>
-            <p className="mt-2 text-sm leading-relaxed text-amber-900/70">
+            <p className="mt-2 text-sm leading-relaxed text-warm-brown/75">
               Dziękujemy za zainteresowanie! Funkcja zamówienia online jest
               obecnie w przygotowaniu. Zostaw swój adres email, a powiadomimy
               Cię, gdy wystartujemy.
@@ -77,7 +77,7 @@ export default function OrderModal({ open, onClose }: OrderModalProps) {
 
             <button
               onClick={onClose}
-              className="mt-4 w-full text-center text-sm text-amber-900/50 transition-colors hover:text-warm-brown"
+              className="mt-4 w-full text-center text-sm text-foreground/55 transition-colors hover:text-warm-brown"
             >
               Nie teraz, dziękuję
             </button>

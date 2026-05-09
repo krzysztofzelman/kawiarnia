@@ -15,7 +15,7 @@ export default function Header() {
   const [modalOpen, setModalOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-cream/95 backdrop-blur-sm shadow-sm">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-cream shadow-sm">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
         {/* Logo */}
         <a href="#" className="flex items-center gap-2">

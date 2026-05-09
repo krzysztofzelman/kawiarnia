@@ -49,7 +49,7 @@ export default function About() {
               <h3 className="mb-6 text-3xl font-bold text-warm-brown sm:text-4xl">
                 Tworzymy miejsce z duszą
               </h3>
-              <p className="mb-8 leading-relaxed text-amber-900/70">
+              <p className="mb-8 leading-relaxed text-foreground/75">
                 Kawa i Ciasteczko powstało z miłości do dobrej kawy i
                 domowych wypieków. W kameralnym wnętrzu, z dala od
                 miejskiego zgiełku, serwujemy starannie przygotowane napoje
@@ -71,7 +71,7 @@ export default function About() {
                       <h4 className="font-semibold text-warm-brown">
                         {item.title}
                       </h4>
-                      <p className="text-sm leading-relaxed text-amber-900/60">
+                      <p className="text-sm leading-relaxed text-foreground/55">
                         {item.desc}
                       </p>
                     </div>

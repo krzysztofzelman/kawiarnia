@@ -46,7 +46,7 @@ export default function Offer({ items }: OfferProps) {
                 <h4 className="mb-2 text-xl font-bold text-warm-brown">
                   {item.title}
                 </h4>
-                <p className="leading-relaxed text-amber-900/60">
+                <p className="leading-relaxed text-foreground/60">
                   {item.description}
                 </p>
               </div>
