@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import { createServerClient } from "@/lib/supabase/server";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
@@ -5,12 +6,13 @@ import About from "@/components/About";
 import Offer from "@/components/Offer";
 import Menu from "@/components/Menu";
 import Contact from "@/components/Contact";
+import SkeletonCard from "@/components/SkeletonCard";
 import Footer from "@/components/Footer";
 import PwaInstallPrompt from "@/components/PwaInstallPrompt";
 import OfflineNotice from "@/components/OfflineNotice";
 import type { MenuItem, OfferItem, OpeningHour } from "@/lib/supabase/types";
 
-export const dynamic = "force-dynamic";
+export const revalidate = 3600;
 
 export default async function Home() {
   let menuItems: MenuItem[] = [];
@@ -37,11 +39,19 @@ export default async function Home() {
       <OfflineNotice />
       <Header />
       <main>
-        <Hero />
+        <Suspense fallback={<SkeletonCard variant="hero" />}>
+          <Hero />
+        </Suspense>
         <About />
-        <Offer items={offers} />
-        <Menu items={menuItems} />
-        <Contact hours={openingHours} />
+        <Suspense fallback={<SkeletonCard variant="card" />}>
+          <Offer items={offers} />
+        </Suspense>
+        <Suspense fallback={<SkeletonCard variant="list" />}>
+          <Menu items={menuItems} />
+        </Suspense>
+        <Suspense fallback={<SkeletonCard variant="contact" />}>
+          <Contact hours={openingHours} />
+        </Suspense>
       </main>
       <Footer />
       <PwaInstallPrompt />

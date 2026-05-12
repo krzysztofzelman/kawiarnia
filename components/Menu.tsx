@@ -21,7 +21,7 @@ export default function Menu({ items }: MenuProps) {
         }));
 
   return (
-    <section id="menu" className="bg-cream py-20 sm:py-28">
+    <section id="menu" className="scroll-mt-20 bg-cream py-20 sm:py-28">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <FadeIn className="mb-14 text-center">
           <h2 className="mb-2 text-sm font-semibold uppercase tracking-widest text-primary-light">

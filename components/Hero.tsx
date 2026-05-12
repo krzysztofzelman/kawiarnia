@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="relative flex min-h-dvh items-center justify-center overflow-hidden bg-gradient-to-b from-cream via-amber-50 to-background px-4 pt-16">
+    <section className="scroll-mt-20 relative flex min-h-dvh items-center justify-center overflow-hidden bg-gradient-to-b from-cream via-amber-50 to-background px-4 pt-16">
       {/* Decorative background circles */}
       <div className="pointer-events-none absolute -top-40 -right-40 h-96 w-96 rounded-full bg-secondary/20 blur-3xl" />
       <div className="pointer-events-none absolute -bottom-40 -left-40 h-80 w-80 rounded-full bg-primary/10 blur-3xl" />
